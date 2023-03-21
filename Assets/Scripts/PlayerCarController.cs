@@ -31,6 +31,14 @@ public class PlayerCarController : MonoBehaviour
         CarSteering();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Checkpoint")
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
     private void MoveCar()
     {
         // all wheel drive
