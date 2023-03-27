@@ -16,8 +16,8 @@ public class PlayerCarController : MonoBehaviour
     public Transform backLeftWheelTransform;
 
     [Header("Car Engine")]
-    public float accelerationForce = 300f;
-    public float breakingForce = 3000f;
+    public float accelerationForce = 500f;
+    public float breakingForce = 4000f;
     private float presentBreakForce = 0f;
     private float presentAcceletation = 0f;
 
